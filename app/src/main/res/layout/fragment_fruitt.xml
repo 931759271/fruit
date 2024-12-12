@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.FruittFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:src="@drawable/c3"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_outside"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:background="@color/colorWhite"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabTextColor="@color/colorBlack"
+        app:tabSelectedTextColor="@color/colorPrimary"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--<com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            android:background="@color/colorWhite"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabTextColor="@color/colorBlack"
+            app:tabSelectedTextColor="@color/colorPrimary"/>-->
+        <!--<androidx.viewpager.widget.PagerTabStrip
+            android:id="@+id/pts_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </androidx.viewpager.widget.PagerTabStrip>-->
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>
+
+
+</FrameLayout>
